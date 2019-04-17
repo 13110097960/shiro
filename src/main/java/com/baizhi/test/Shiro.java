@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 public class Shiro {
     public static void main(String[] args) {
-        
         IniSecurityManagerFactory iniSecurityManagerFactory = new IniSecurityManagerFactory("classpath:shiro.ini");
         SecurityManager instance = iniSecurityManagerFactory.getInstance();
         SecurityUtils.setSecurityManager(instance);
